@@ -7,37 +7,7 @@
 </head>
 
 <body>
-<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "111336296905245");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-  
   <div class="container-fluid">
     <div class="NavbarView"></div>
     <div id="main"></div>
@@ -57,6 +27,7 @@
   <script type="module" src="assets/js/views/MobDirectoryView/MobDirectoryView.js"></script>
   <script type="module" src="assets/js/views/DailyReportView/DailyReportView.js"></script>
   <script type="module" src="assets/js/App.js"></script>
+  <script src="https://smartbot-widget.meetsoci.com/chat.js?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoxNjA0LCJwcm9qZWN0X2lkIjo0Njc4MTJ9._Xl2OAXz6-29WDuiaoghIro3kQpkutQZW3b5LUaIFAs"></script>
 </body>
 
 </html>
